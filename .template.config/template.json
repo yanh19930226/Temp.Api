@@ -1,0 +1,13 @@
+{
+    "author": "yanh",
+    "classifications": [ "Web/WebAPI" ], 
+    "name": "yanhtemp",
+    "identity": "yanhtemp", 
+    "shortName": "yanhtemp",
+    "tags": {
+      "language": "C#" ,
+      "type":"project"
+    },
+    "sourceName": "Temp.Api",  
+    "preferNameDirectory": true  
+}

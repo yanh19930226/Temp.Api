@@ -1,0 +1,43 @@
+11:56 || Information || Microsoft.Extensions.Hosting.IHost || Setting MinThreads=8,MinCompletionPortThreads=8 ||  ||end 
+11:56 || Information || Microsoft.Extensions.Hosting.IHost || Setting MaxThreads=32767,MaxCompletionPortThreads=1000 ||  ||end 
+11:56 || Information || In66.Net.Consul.Registrar.RegistrationProvider || register to consul (http://192.168.78.1:20010) ||  ||end 
+11:56 || Information || Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager || User profile is available. Using '"C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. ||  ||end 
+11:56 || Information || DotNetCore.CAP.Processor.Dispatcher || Starting default Dispatcher ||  ||end 
+11:56 || Information || DotNetCore.CAP.Processor.CapProcessingServer || Starting the processing server. ||  ||end 
+11:56 || Information || DotNetCore.CAP.Internal.ConsumerRegister || RabbitMQ consumer registered. --> amq.ctag-_m6RT-r8JKTHZGUx0bEfVg ||  ||end 
+11:56 || Information || DotNetCore.CAP.Internal.Bootstrapper || ### CAP started! ||  ||end 
+11:56 || Warning || Microsoft.AspNetCore.Server.Kestrel || Overriding address(es) '"http://localhost:5069"'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead. ||  ||end 
+11:56 || Information || Microsoft.Hosting.Lifetime || Now listening on: "http://0.0.0.0:20010" ||  ||end 
+11:56 || Information || Microsoft.Hosting.Lifetime || Now listening on: "http://0.0.0.0:20011" ||  ||end 
+11:56 || Information || Microsoft.Hosting.Lifetime || Application started. Press Ctrl+C to shut down. ||  ||end 
+11:56 || Information || Microsoft.Hosting.Lifetime || Hosting environment: "Development" ||  ||end 
+11:56 || Information || Microsoft.Hosting.Lifetime || Content root path: "D:\code\net\Temp.Api\src\Temp.Api\" ||  ||end 
+11:56 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/1.1 GET http://192.168.78.1:20010/_vs/browserLink - - ||  ||end 
+11:56 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished HTTP/1.1 GET http://192.168.78.1:20010/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 27.3302ms ||  ||end 
+11:57 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/1.1 GET http://192.168.78.1:20010/api/Base/HealthCheck - - ||  ||end 
+11:57 || Information || Microsoft.AspNetCore.Routing.EndpointMiddleware || Executing endpoint '"In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)"' ||  ||end 
+11:57 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Route matched with "{action = \"HealthCheck\", controller = \"Base\"}". Executing controller action with signature "System.String HealthCheck()" on controller "In66.Net.Share.Controller.BaseController" ("In66.Net.Share"). ||  ||end 
+11:57 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executing action method "In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)" - Validation state: Valid ||  ||end 
+11:57 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executed action method "In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.2209ms. ||  ||end 
+11:57 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor || Executing "ObjectResult", writing value of type '"System.String"'. ||  ||end 
+11:57 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executed action "In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)" in 53.478ms ||  ||end 
+11:57 || Information || Microsoft.AspNetCore.Routing.EndpointMiddleware || Executed endpoint '"In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)"' ||  ||end 
+11:57 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished HTTP/1.1 GET http://192.168.78.1:20010/api/Base/HealthCheck - - - 200 - text/plain;+charset=utf-8 96.7401ms ||  ||end 
+11:57 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/1.1 GET http://192.168.78.1:20010/temp/home/TestData - - ||  ||end 
+11:57 || Information || Microsoft.AspNetCore.Routing.EndpointMiddleware || Executing endpoint '"Temp.Api.Controllers.HomeController.TestData (Temp.Api)"' ||  ||end 
+11:57 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Route matched with "{action = \"TestData\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TestData()" on controller "Temp.Api.Controllers.HomeController" ("Temp.Api"). ||  ||end 
+11:57 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executing action method "Temp.Api.Controllers.HomeController.TestData (Temp.Api)" - Validation state: Valid ||  ||end 
+11:57 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executed action method "Temp.Api.Controllers.HomeController.TestData (Temp.Api)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 447.9439ms. ||  ||end 
+11:57 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor || Executing "OkObjectResult", writing value of type '"Temp.Api.Models.Entities.TestEntity"'. ||  ||end 
+11:57 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executed action "Temp.Api.Controllers.HomeController.TestData (Temp.Api)" in 571.0204ms ||  ||end 
+11:57 || Information || Microsoft.AspNetCore.Routing.EndpointMiddleware || Executed endpoint '"Temp.Api.Controllers.HomeController.TestData (Temp.Api)"' ||  ||end 
+11:57 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished HTTP/1.1 GET http://192.168.78.1:20010/temp/home/TestData - - - 200 - application/json;+charset=utf-8 584.2649ms ||  ||end 
+11:57 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/1.1 GET http://192.168.78.1:20010/api/Base/HealthCheck - - ||  ||end 
+11:57 || Information || Microsoft.AspNetCore.Routing.EndpointMiddleware || Executing endpoint '"In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)"' ||  ||end 
+11:57 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Route matched with "{action = \"HealthCheck\", controller = \"Base\"}". Executing controller action with signature "System.String HealthCheck()" on controller "In66.Net.Share.Controller.BaseController" ("In66.Net.Share"). ||  ||end 
+11:57 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executing action method "In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)" - Validation state: Valid ||  ||end 
+11:57 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executed action method "In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.0313ms. ||  ||end 
+11:57 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor || Executing "ObjectResult", writing value of type '"System.String"'. ||  ||end 
+11:57 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executed action "In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)" in 19.3686ms ||  ||end 
+11:57 || Information || Microsoft.AspNetCore.Routing.EndpointMiddleware || Executed endpoint '"In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)"' ||  ||end 
+11:57 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished HTTP/1.1 GET http://192.168.78.1:20010/api/Base/HealthCheck - - - 200 - text/plain;+charset=utf-8 24.0276ms ||  ||end 
