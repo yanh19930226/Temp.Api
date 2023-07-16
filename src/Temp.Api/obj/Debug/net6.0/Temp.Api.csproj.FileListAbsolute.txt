@@ -245,3 +245,13 @@ D:\code\net\Temp.Api\src\Temp.Api\obj\Debug\net6.0\refint\Temp.Api.dll
 D:\code\net\Temp.Api\src\Temp.Api\obj\Debug\net6.0\Temp.Api.pdb
 D:\code\net\Temp.Api\src\Temp.Api\obj\Debug\net6.0\Temp.Api.genruntimeconfig.cache
 D:\code\net\Temp.Api\src\Temp.Api\obj\Debug\net6.0\ref\Temp.Api.dll
+D:\code\net\Temp.Api\src\Temp.Api\bin\Debug\net6.0\IGeekFan.AspNetCore.Knife4jUI.dll
+D:\code\net\Temp.Api\src\Temp.Api\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\code\net\Temp.Api\src\Temp.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\code\net\Temp.Api\src\Temp.Api\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+D:\code\net\Temp.Api\src\Temp.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.ReDoc.dll
+D:\code\net\Temp.Api\src\Temp.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\code\net\Temp.Api\src\Temp.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\code\net\Temp.Api\src\Temp.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\code\net\Temp.Api\src\Temp.Api\bin\Debug\net6.0\Temp.Api.xml
+D:\code\net\Temp.Api\src\Temp.Api\obj\Debug\net6.0\Temp.Api.xml

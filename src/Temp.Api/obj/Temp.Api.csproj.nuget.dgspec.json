@@ -26,8 +26,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://innernuget.xiguaji.com/v3/index.json": {}
+          "http://43.142.4.243:8081/repository/nuget-group/": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -47,7 +47,7 @@
           "dependencies": {
             "In66.Net.Share": {
               "target": "Package",
-              "version": "[3.25.333, )"
+              "version": "[3.25.36, )"
             }
           },
           "imports": [

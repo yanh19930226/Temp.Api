@@ -1,0 +1,225 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Temp.Api</name>
+    </assembly>
+    <members>
+        <member name="M:Temp.Api.Applications.Subscribers.CapEventSubscriber.ProcessWarehouseQtyBlockedEvent(Temp.Api.Models.Events.CaptEvent)">
+            <summary>
+            TestEvent
+            </summary>
+            <param name="eventDto"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Temp.Api.Applications.Subscribers.RabbitDemoEventBusHandler">
+            <summary>
+            事件处理服务，相当于订阅事件
+            </summary>
+        </member>
+        <member name="T:Temp.Api.Applications.Subscribers.RabbitTestEventBusHandler">
+            <summary>
+            事件处理服务，相当于订阅事件
+            </summary>
+        </member>
+        <member name="M:Temp.Api.Controllers.HomeController.#ctor(Microsoft.Extensions.Logging.ILogger{Temp.Api.Controllers.HomeController},Temp.Api.Services.ITestServices,In66.Net.Caching.IRedisProvider,In66.Net.Caching.IDistributedLocker,In66.Net.Caching.ICacheProvider,Microsoft.Extensions.Options.IOptionsSnapshot{In66.Net.Share.Models.Config.CorsConfig},Microsoft.Extensions.Options.IOptionsSnapshot{Temp.Api.Models.Configs.TestConfig},In66.Net.EventBus.IEventPublisher,In66.Net.Mongo.Interfaces.IMongoRepository{In66.Net.Mongo.Entities.LoginLog},In66.Net.EventBus.Rabbit.IEventBus)">
+            <summary>
+            初始化
+            </summary>
+            <param name="logger"></param>
+        </member>
+        <member name="M:Temp.Api.Controllers.HomeController.CreateBasicToken(System.String)">
+            <summary>
+            CreateBasicToken
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Temp.Api.Controllers.HomeController.TestLog">
+            <summary>
+            TestLog
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Temp.Api.Controllers.HomeController.TestConfig">
+            <summary>
+            testconfig
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Temp.Api.Controllers.HomeController.TestData">
+            <summary>
+            TestData
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Temp.Api.Controllers.HomeController.TestRpc">
+            <summary>
+            TestRpc
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Temp.Api.Controllers.HomeController.RedisBasic">
+            <summary>
+            RedisBasic
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Temp.Api.Controllers.HomeController.RedisCache">
+            <summary>
+            RedisCache
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Temp.Api.Controllers.HomeController.PublishCap">
+            <summary>
+            PublishCap
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Temp.Api.Controllers.HomeController.PublishRabbitTest">
+            <summary>
+            PublishRabbitTest
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Temp.Api.Controllers.HomeController.PublishRabbitDemo">
+            <summary>
+            PublishRabbitDemo
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Temp.Api.Controllers.HomeController.MongoCreate">
+            <summary>
+            MongoCreate
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Temp.Api.Controllers.HomeController.MongoGetAll">
+            <summary>
+            MongoGetAll
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Temp.Api.Controllers.HomeController.MongoGetPage">
+            <summary>
+            MongoGetPage
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Temp.Api.Controllers.HomeController.Version">
+            <summary>
+            Version
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Temp.Api.Models.Configs.TestConfig">
+            <summary>
+            TestConfig
+            </summary>
+        </member>
+        <member name="P:Temp.Api.Models.Configs.TestConfig.TestStr">
+            <summary>
+            TestStr
+            </summary>
+        </member>
+        <member name="T:Temp.Api.Models.Entities.TestEntity">
+            <summary>
+            TestEntity
+            </summary>
+        </member>
+        <member name="P:Temp.Api.Models.Entities.TestEntity.Code">
+            <summary>
+            编号
+            </summary>
+        </member>
+        <member name="P:Temp.Api.Models.Entities.TestEntity.Component">
+            <summary>
+            組件配置
+            </summary>
+        </member>
+        <member name="P:Temp.Api.Models.Entities.TestEntity.Hidden">
+            <summary>
+            是否隐藏
+            </summary>
+        </member>
+        <member name="P:Temp.Api.Models.Entities.TestEntity.Icon">
+            <summary>
+            图标
+            </summary>
+        </member>
+        <member name="P:Temp.Api.Models.Entities.TestEntity.IsMenu">
+            <summary>
+            是否是菜单1:菜单,0:按钮
+            </summary>
+        </member>
+        <member name="P:Temp.Api.Models.Entities.TestEntity.IsOpen">
+            <summary>
+            是否默认打开1:是,0:否
+            </summary>
+        </member>
+        <member name="P:Temp.Api.Models.Entities.TestEntity.Levels">
+            <summary>
+            级别
+            </summary>
+        </member>
+        <member name="P:Temp.Api.Models.Entities.TestEntity.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Temp.Api.Models.Entities.TestEntity.Ordinal">
+            <summary>
+            序号
+            </summary>
+        </member>
+        <member name="P:Temp.Api.Models.Entities.TestEntity.PCode">
+            <summary>
+            父菜单编号
+            </summary>
+        </member>
+        <member name="P:Temp.Api.Models.Entities.TestEntity.PCodes">
+            <summary>
+            递归父级菜单编号
+            </summary>
+        </member>
+        <member name="P:Temp.Api.Models.Entities.TestEntity.Status">
+            <summary>
+            状态1:启用,0:禁用
+            </summary>
+        </member>
+        <member name="P:Temp.Api.Models.Entities.TestEntity.Tips">
+            <summary>
+            鼠标悬停提示信息
+            </summary>
+        </member>
+        <member name="P:Temp.Api.Models.Entities.TestEntity.Url">
+            <summary>
+            链接
+            </summary>
+        </member>
+        <member name="T:Temp.Api.Services.ITestServices">
+            <summary>
+            ITestServices
+            </summary>
+        </member>
+        <member name="M:Temp.Api.Services.ITestServices.GetConsul(System.Int64)">
+            <summary>
+            GetConsul
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Temp.Api.Services.ITestServices.GetYande(System.Int64)">
+            <summary>
+            GetYande
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Temp.Api.Services.ITestServices.GetTestEntityFromDb">
+            <summary>
+            GetTestEntityFromDb
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

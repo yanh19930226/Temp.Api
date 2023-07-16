@@ -1,0 +1,252 @@
+18:06 || Information || Microsoft.Extensions.Hosting.IHost || Setting MinThreads=8,MinCompletionPortThreads=8 ||  ||end 
+18:06 || Information || Microsoft.Extensions.Hosting.IHost || Setting MaxThreads=32767,MaxCompletionPortThreads=1000 ||  ||end 
+18:06 || Information || In66.Net.Consul.Registrar.RegistrationProvider || register to consul (http://192.168.78.1:20010) ||  ||end 
+18:06 || Information || Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager || User profile is available. Using '"C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. ||  ||end 
+18:06 || Information || DotNetCore.CAP.Processor.Dispatcher || Starting default Dispatcher ||  ||end 
+18:06 || Information || DotNetCore.CAP.Processor.CapProcessingServer || Starting the processing server. ||  ||end 
+18:06 || Information || DotNetCore.CAP.Internal.ConsumerRegister || RabbitMQ consumer registered. --> amq.ctag-YbWEnuN1xR8BemKxa9BNGA ||  ||end 
+18:06 || Information || DotNetCore.CAP.Internal.Bootstrapper || ### CAP started! ||  ||end 
+18:06 || Warning || Microsoft.AspNetCore.Server.Kestrel || Overriding address(es) '"http://localhost:5069"'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead. ||  ||end 
+18:06 || Information || Microsoft.Hosting.Lifetime || Now listening on: "http://0.0.0.0:20010" ||  ||end 
+18:06 || Information || Microsoft.Hosting.Lifetime || Now listening on: "http://0.0.0.0:20011" ||  ||end 
+18:06 || Information || Microsoft.Hosting.Lifetime || Application started. Press Ctrl+C to shut down. ||  ||end 
+18:06 || Information || Microsoft.Hosting.Lifetime || Hosting environment: "Development" ||  ||end 
+18:06 || Information || Microsoft.Hosting.Lifetime || Content root path: "D:\code\net\Temp.Api\src\Temp.Api\" ||  ||end 
+18:07 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/1.1 GET http://192.168.78.1:20010/api/Base/HealthCheck - - ||  ||end 
+18:07 || Error || In66.Net.Share.Middleware.GlobalExceptionMidd || An exception was thrown while activating Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator -> λ:Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions -> Microsoft.Extensions.Options.UnnamedOptionsManager`1[[Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions, Swashbuckle.AspNetCore.SwaggerGen, Version=6.5.0.0, Culture=neutral, PublicKeyToken=d84d99fb0135530a]] -> Microsoft.Extensions.Options.OptionsFactory`1[[Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions, Swashbuckle.AspNetCore.SwaggerGen, Version=6.5.0.0, Culture=neutral, PublicKeyToken=d84d99fb0135530a]] -> λ:Microsoft.Extensions.Options.IConfigureOptions`1[[Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions, Swashbuckle.AspNetCore.SwaggerGen, Version=6.5.0.0, Culture=neutral, PublicKeyToken=d84d99fb0135530a]][] -> Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions. || Autofac.Core.DependencyResolutionException: An exception was thrown while activating Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator -> λ:Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions -> Microsoft.Extensions.Options.UnnamedOptionsManager`1[[Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions, Swashbuckle.AspNetCore.SwaggerGen, Version=6.5.0.0, Culture=neutral, PublicKeyToken=d84d99fb0135530a]] -> Microsoft.Extensions.Options.OptionsFactory`1[[Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions, Swashbuckle.AspNetCore.SwaggerGen, Version=6.5.0.0, Culture=neutral, PublicKeyToken=d84d99fb0135530a]] -> λ:Microsoft.Extensions.Options.IConfigureOptions`1[[Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions, Swashbuckle.AspNetCore.SwaggerGen, Version=6.5.0.0, Culture=neutral, PublicKeyToken=d84d99fb0135530a]][] -> Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions.
+ ---> Autofac.Core.DependencyResolutionException: An exception was thrown while invoking the constructor 'Void .ctor(Microsoft.Extensions.Options.IOptions`1[Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions], System.IServiceProvider, Microsoft.AspNetCore.Hosting.IWebHostEnvironment)' on type 'ConfigureSwaggerGeneratorOptions'.
+ ---> System.IO.FileNotFoundException: Could not find file 'D:\code\net\Temp.Api\src\Temp.Api\bin\Debug\net6.0\Temp.Api.xml'.
+File name: 'D:\code\net\Temp.Api\src\Temp.Api\bin\Debug\net6.0\Temp.Api.xml'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XPath.XPathDocument.LoadFromReader(XmlReader reader, XmlSpace space)
+   at System.Xml.XPath.XPathDocument..ctor(String uri, XmlSpace space)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.<>c__DisplayClass32_0.<IncludeXmlComments>b__0()
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, Func`1 xmlDocFactory, Boolean includeControllerXmlComments)
+   at In66.Net.Share.Registrar.WebRegistrar.ServiceRegistrar.<>c.<AddSwagger>b__5_2(SwaggerGenOptions options)
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()
+   at lambda_method75(Closure , Object[] )
+   at Autofac.Core.Activators.Reflection.BoundConstructor.Instantiate()
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Activators.Reflection.BoundConstructor.Instantiate()
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.<>c__DisplayClass12_0.<UseSingleConstructorActivation>b__0(ResolveRequestContext ctxt, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.DisposalTrackingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.CircularDependencyDetectorMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ExecuteOperation(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method574(Closure , Object , HttpContext , IServiceProvider )
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context, ICorsPolicyProvider corsPolicyProvider)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.DefaultFilesMiddleware.Invoke(HttpContext context)
+   at In66.Net.Share.Middleware.GlobalExceptionMidd.Invoke(HttpContext context)
+ ||end 
+18:07 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished HTTP/1.1 GET http://192.168.78.1:20010/api/Base/HealthCheck - - - 500 - application/problem+json 110.6582ms ||  ||end 
+18:07 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/1.1 GET http://192.168.78.1:20010/api/Base/HealthCheck - - ||  ||end 
+18:07 || Error || In66.Net.Share.Middleware.GlobalExceptionMidd || An exception was thrown while activating Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator -> λ:Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions -> Microsoft.Extensions.Options.UnnamedOptionsManager`1[[Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions, Swashbuckle.AspNetCore.SwaggerGen, Version=6.5.0.0, Culture=neutral, PublicKeyToken=d84d99fb0135530a]] -> Microsoft.Extensions.Options.OptionsFactory`1[[Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions, Swashbuckle.AspNetCore.SwaggerGen, Version=6.5.0.0, Culture=neutral, PublicKeyToken=d84d99fb0135530a]] -> λ:Microsoft.Extensions.Options.IConfigureOptions`1[[Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions, Swashbuckle.AspNetCore.SwaggerGen, Version=6.5.0.0, Culture=neutral, PublicKeyToken=d84d99fb0135530a]][] -> Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions. || Autofac.Core.DependencyResolutionException: An exception was thrown while activating Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator -> λ:Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions -> Microsoft.Extensions.Options.UnnamedOptionsManager`1[[Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions, Swashbuckle.AspNetCore.SwaggerGen, Version=6.5.0.0, Culture=neutral, PublicKeyToken=d84d99fb0135530a]] -> Microsoft.Extensions.Options.OptionsFactory`1[[Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions, Swashbuckle.AspNetCore.SwaggerGen, Version=6.5.0.0, Culture=neutral, PublicKeyToken=d84d99fb0135530a]] -> λ:Microsoft.Extensions.Options.IConfigureOptions`1[[Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorOptions, Swashbuckle.AspNetCore.SwaggerGen, Version=6.5.0.0, Culture=neutral, PublicKeyToken=d84d99fb0135530a]][] -> Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions.
+ ---> Autofac.Core.DependencyResolutionException: An exception was thrown while invoking the constructor 'Void .ctor(Microsoft.Extensions.Options.IOptions`1[Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions], System.IServiceProvider, Microsoft.AspNetCore.Hosting.IWebHostEnvironment)' on type 'ConfigureSwaggerGeneratorOptions'.
+ ---> System.IO.FileNotFoundException: Could not find file 'D:\code\net\Temp.Api\src\Temp.Api\bin\Debug\net6.0\Temp.Api.xml'.
+File name: 'D:\code\net\Temp.Api\src\Temp.Api\bin\Debug\net6.0\Temp.Api.xml'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XPath.XPathDocument.LoadFromReader(XmlReader reader, XmlSpace space)
+   at System.Xml.XPath.XPathDocument..ctor(String uri, XmlSpace space)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.<>c__DisplayClass32_0.<IncludeXmlComments>b__0()
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, Func`1 xmlDocFactory, Boolean includeControllerXmlComments)
+   at In66.Net.Share.Registrar.WebRegistrar.ServiceRegistrar.<>c.<AddSwagger>b__5_2(SwaggerGenOptions options)
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()
+   at lambda_method75(Closure , Object[] )
+   at Autofac.Core.Activators.Reflection.BoundConstructor.Instantiate()
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Activators.Reflection.BoundConstructor.Instantiate()
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.<>c__DisplayClass12_0.<UseSingleConstructorActivation>b__0(ResolveRequestContext ctxt, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.DisposalTrackingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.CircularDependencyDetectorMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ExecuteOperation(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method574(Closure , Object , HttpContext , IServiceProvider )
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context, ICorsPolicyProvider corsPolicyProvider)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.DefaultFilesMiddleware.Invoke(HttpContext context)
+   at In66.Net.Share.Middleware.GlobalExceptionMidd.Invoke(HttpContext context)
+ ||end 
+18:07 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished HTTP/1.1 GET http://192.168.78.1:20010/api/Base/HealthCheck - - - 500 - application/problem+json 5734.2632ms ||  ||end 
+18:07 || Information || Microsoft.Extensions.Hosting.IHost || Setting MinThreads=8,MinCompletionPortThreads=8 ||  ||end 
+18:07 || Information || Microsoft.Extensions.Hosting.IHost || Setting MaxThreads=32767,MaxCompletionPortThreads=1000 ||  ||end 
+18:07 || Information || In66.Net.Consul.Registrar.RegistrationProvider || register to consul (http://192.168.78.1:20010) ||  ||end 
+18:07 || Information || Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager || User profile is available. Using '"C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. ||  ||end 
+18:07 || Information || DotNetCore.CAP.Processor.Dispatcher || Starting default Dispatcher ||  ||end 
+18:07 || Information || DotNetCore.CAP.Processor.CapProcessingServer || Starting the processing server. ||  ||end 
+18:07 || Information || DotNetCore.CAP.Internal.ConsumerRegister || RabbitMQ consumer registered. --> amq.ctag-HVklDyz8DHgO1kLKnU4ngQ ||  ||end 
+18:07 || Information || DotNetCore.CAP.Internal.Bootstrapper || ### CAP started! ||  ||end 
+18:07 || Warning || Microsoft.AspNetCore.Server.Kestrel || Overriding address(es) '"http://localhost:5069"'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead. ||  ||end 
+18:07 || Information || Microsoft.Hosting.Lifetime || Now listening on: "http://0.0.0.0:20010" ||  ||end 
+18:07 || Information || Microsoft.Hosting.Lifetime || Now listening on: "http://0.0.0.0:20011" ||  ||end 
+18:07 || Information || Microsoft.Hosting.Lifetime || Application started. Press Ctrl+C to shut down. ||  ||end 
+18:07 || Information || Microsoft.Hosting.Lifetime || Hosting environment: "Development" ||  ||end 
+18:07 || Information || Microsoft.Hosting.Lifetime || Content root path: "D:\code\net\Temp.Api\src\Temp.Api\" ||  ||end 
+18:07 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/1.1 GET http://192.168.78.1:20010/api/Base/HealthCheck - - ||  ||end 
+18:07 || Information || Microsoft.AspNetCore.Routing.EndpointMiddleware || Executing endpoint '"In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)"' ||  ||end 
+18:07 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Route matched with "{action = \"HealthCheck\", controller = \"Base\"}". Executing controller action with signature "System.String HealthCheck()" on controller "In66.Net.Share.Controller.BaseController" ("In66.Net.Share"). ||  ||end 
+18:07 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executing action method "In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)" - Validation state: Valid ||  ||end 
+18:07 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executed action method "In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.1534ms. ||  ||end 
+18:07 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor || Executing "ObjectResult", writing value of type '"System.String"'. ||  ||end 
+18:07 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executed action "In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)" in 44.352ms ||  ||end 
+18:07 || Information || Microsoft.AspNetCore.Routing.EndpointMiddleware || Executed endpoint '"In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)"' ||  ||end 
+18:07 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished HTTP/1.1 GET http://192.168.78.1:20010/api/Base/HealthCheck - - - 200 - text/plain;+charset=utf-8 142.8900ms ||  ||end 
+18:07 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/1.1 GET http://192.168.78.1:20010/api/Base/HealthCheck - - ||  ||end 
+18:07 || Information || Microsoft.AspNetCore.Routing.EndpointMiddleware || Executing endpoint '"In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)"' ||  ||end 
+18:07 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Route matched with "{action = \"HealthCheck\", controller = \"Base\"}". Executing controller action with signature "System.String HealthCheck()" on controller "In66.Net.Share.Controller.BaseController" ("In66.Net.Share"). ||  ||end 
+18:07 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executing action method "In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)" - Validation state: Valid ||  ||end 
+18:07 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executed action method "In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.0386ms. ||  ||end 
+18:07 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor || Executing "ObjectResult", writing value of type '"System.String"'. ||  ||end 
+18:07 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executed action "In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)" in 16.7471ms ||  ||end 
+18:07 || Information || Microsoft.AspNetCore.Routing.EndpointMiddleware || Executed endpoint '"In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)"' ||  ||end 
+18:07 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished HTTP/1.1 GET http://192.168.78.1:20010/api/Base/HealthCheck - - - 200 - text/plain;+charset=utf-8 23.1832ms ||  ||end 
+18:07 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/1.1 GET http://192.168.78.1:20010/api/Base/HealthCheck - - ||  ||end 
+18:07 || Information || Microsoft.AspNetCore.Routing.EndpointMiddleware || Executing endpoint '"In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)"' ||  ||end 
+18:07 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Route matched with "{action = \"HealthCheck\", controller = \"Base\"}". Executing controller action with signature "System.String HealthCheck()" on controller "In66.Net.Share.Controller.BaseController" ("In66.Net.Share"). ||  ||end 
+18:07 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executing action method "In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)" - Validation state: Valid ||  ||end 
+18:07 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executed action method "In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.0062ms. ||  ||end 
+18:07 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor || Executing "ObjectResult", writing value of type '"System.String"'. ||  ||end 
+18:07 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executed action "In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)" in 16.082ms ||  ||end 
+18:07 || Information || Microsoft.AspNetCore.Routing.EndpointMiddleware || Executed endpoint '"In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)"' ||  ||end 
+18:07 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished HTTP/1.1 GET http://192.168.78.1:20010/api/Base/HealthCheck - - - 200 - text/plain;+charset=utf-8 23.3832ms ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/1.1 GET http://192.168.78.1:20010/api/Base/HealthCheck - - ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Routing.EndpointMiddleware || Executing endpoint '"In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)"' ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Route matched with "{action = \"HealthCheck\", controller = \"Base\"}". Executing controller action with signature "System.String HealthCheck()" on controller "In66.Net.Share.Controller.BaseController" ("In66.Net.Share"). ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executing action method "In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)" - Validation state: Valid ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executed action method "In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.0061ms. ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor || Executing "ObjectResult", writing value of type '"System.String"'. ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executed action "In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)" in 15.1898ms ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Routing.EndpointMiddleware || Executed endpoint '"In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)"' ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished HTTP/1.1 GET http://192.168.78.1:20010/api/Base/HealthCheck - - - 200 - text/plain;+charset=utf-8 23.6831ms ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/1.1 GET http://192.168.78.1:20010/_vs/browserLink - - ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished HTTP/1.1 GET http://192.168.78.1:20010/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 160.5472ms ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/1.1 GET http://192.168.78.1:20010/api/Base/HealthCheck - - ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Routing.EndpointMiddleware || Executing endpoint '"In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)"' ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Route matched with "{action = \"HealthCheck\", controller = \"Base\"}". Executing controller action with signature "System.String HealthCheck()" on controller "In66.Net.Share.Controller.BaseController" ("In66.Net.Share"). ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executing action method "In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)" - Validation state: Valid ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executed action method "In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.0066ms. ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor || Executing "ObjectResult", writing value of type '"System.String"'. ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executed action "In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)" in 11.3326ms ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Routing.EndpointMiddleware || Executed endpoint '"In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)"' ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished HTTP/1.1 GET http://192.168.78.1:20010/api/Base/HealthCheck - - - 200 - text/plain;+charset=utf-8 18.1383ms ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/1.1 GET http://192.168.78.1:20010/api/Base/HealthCheck - - ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Routing.EndpointMiddleware || Executing endpoint '"In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)"' ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Route matched with "{action = \"HealthCheck\", controller = \"Base\"}". Executing controller action with signature "System.String HealthCheck()" on controller "In66.Net.Share.Controller.BaseController" ("In66.Net.Share"). ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executing action method "In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)" - Validation state: Valid ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executed action method "In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.0065ms. ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor || Executing "ObjectResult", writing value of type '"System.String"'. ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executed action "In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)" in 16.8207ms ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Routing.EndpointMiddleware || Executed endpoint '"In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)"' ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished HTTP/1.1 GET http://192.168.78.1:20010/api/Base/HealthCheck - - - 200 - text/plain;+charset=utf-8 22.4168ms ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/1.1 GET http://192.168.78.1:20010/api/Base/HealthCheck - - ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Routing.EndpointMiddleware || Executing endpoint '"In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)"' ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Route matched with "{action = \"HealthCheck\", controller = \"Base\"}". Executing controller action with signature "System.String HealthCheck()" on controller "In66.Net.Share.Controller.BaseController" ("In66.Net.Share"). ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executing action method "In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)" - Validation state: Valid ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executed action method "In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.0062ms. ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor || Executing "ObjectResult", writing value of type '"System.String"'. ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executed action "In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)" in 15.505ms ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Routing.EndpointMiddleware || Executed endpoint '"In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)"' ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished HTTP/1.1 GET http://192.168.78.1:20010/api/Base/HealthCheck - - - 200 - text/plain;+charset=utf-8 20.3893ms ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/1.1 GET http://192.168.78.1:20010/_vs/browserLink - - ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished HTTP/1.1 GET http://192.168.78.1:20010/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 12.0197ms ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/1.1 GET http://192.168.78.1:20010/api/Base/HealthCheck - - ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Routing.EndpointMiddleware || Executing endpoint '"In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)"' ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Route matched with "{action = \"HealthCheck\", controller = \"Base\"}". Executing controller action with signature "System.String HealthCheck()" on controller "In66.Net.Share.Controller.BaseController" ("In66.Net.Share"). ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executing action method "In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)" - Validation state: Valid ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executed action method "In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.0068ms. ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor || Executing "ObjectResult", writing value of type '"System.String"'. ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executed action "In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)" in 17.6785ms ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Routing.EndpointMiddleware || Executed endpoint '"In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)"' ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished HTTP/1.1 GET http://192.168.78.1:20010/api/Base/HealthCheck - - - 200 - text/plain;+charset=utf-8 23.0767ms ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/1.1 GET http://192.168.78.1:20010/_vs/browserLink - - ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished HTTP/1.1 GET http://192.168.78.1:20010/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 7.7497ms ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/1.1 GET http://192.168.78.1:20010/_vs/browserLink - - ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished HTTP/1.1 GET http://192.168.78.1:20010/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 8.2379ms ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/1.1 GET http://192.168.78.1:20010/_vs/browserLink - - ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished HTTP/1.1 GET http://192.168.78.1:20010/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 5.2557ms ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/1.1 GET http://192.168.78.1:20010/_vs/browserLink - - ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished HTTP/1.1 GET http://192.168.78.1:20010/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 4.7267ms ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/1.1 GET http://192.168.78.1:20010/_vs/browserLink - - ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished HTTP/1.1 GET http://192.168.78.1:20010/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 5.4082ms ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/1.1 GET http://192.168.78.1:20010/_vs/browserLink - - ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished HTTP/1.1 GET http://192.168.78.1:20010/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 4.4237ms ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/1.1 GET http://192.168.78.1:20010/_vs/browserLink - - ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished HTTP/1.1 GET http://192.168.78.1:20010/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 4.6776ms ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/1.1 GET http://192.168.78.1:20010/_vs/browserLink - - ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished HTTP/1.1 GET http://192.168.78.1:20010/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 4.6262ms ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/1.1 GET http://192.168.78.1:20010/_vs/browserLink - - ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished HTTP/1.1 GET http://192.168.78.1:20010/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 29.3465ms ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/1.1 GET http://192.168.78.1:20010/_vs/browserLink - - ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished HTTP/1.1 GET http://192.168.78.1:20010/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 4.5552ms ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/1.1 GET http://192.168.78.1:20010/api/Base/HealthCheck - - ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Routing.EndpointMiddleware || Executing endpoint '"In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)"' ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Route matched with "{action = \"HealthCheck\", controller = \"Base\"}". Executing controller action with signature "System.String HealthCheck()" on controller "In66.Net.Share.Controller.BaseController" ("In66.Net.Share"). ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executing action method "In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)" - Validation state: Valid ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executed action method "In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.007ms. ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor || Executing "ObjectResult", writing value of type '"System.String"'. ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executed action "In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)" in 31.76ms ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Routing.EndpointMiddleware || Executed endpoint '"In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)"' ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished HTTP/1.1 GET http://192.168.78.1:20010/api/Base/HealthCheck - - - 200 - text/plain;+charset=utf-8 36.8890ms ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request starting HTTP/1.1 GET http://192.168.78.1:20010/api/Base/HealthCheck - - ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Routing.EndpointMiddleware || Executing endpoint '"In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)"' ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Route matched with "{action = \"HealthCheck\", controller = \"Base\"}". Executing controller action with signature "System.String HealthCheck()" on controller "In66.Net.Share.Controller.BaseController" ("In66.Net.Share"). ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executing action method "In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)" - Validation state: Valid ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executed action method "In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.0069ms. ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor || Executing "ObjectResult", writing value of type '"System.String"'. ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker || Executed action "In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)" in 17.6512ms ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Routing.EndpointMiddleware || Executed endpoint '"In66.Net.Share.Controller.BaseController.HealthCheck (In66.Net.Share)"' ||  ||end 
+18:08 || Information || Microsoft.AspNetCore.Hosting.Diagnostics || Request finished HTTP/1.1 GET http://192.168.78.1:20010/api/Base/HealthCheck - - - 200 - text/plain;+charset=utf-8 25.1596ms ||  ||end 

@@ -11,7 +11,7 @@ internal static class Program
             var app = WebApplication
                 .CreateBuilder(args) 
                 .ConfigureDefault(serviceInfo)
-                .Build();
+                .Build().BuildServiceProvider();
 
             //Middlewares
             app.UseCore();

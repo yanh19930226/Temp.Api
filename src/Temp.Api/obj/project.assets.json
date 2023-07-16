@@ -937,7 +937,23 @@
           }
         }
       },
-      "In66.Net.Caching/3.7.1": {
+      "IGeekFan.AspNetCore.Knife4jUI/0.0.13": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/IGeekFan.AspNetCore.Knife4jUI.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/IGeekFan.AspNetCore.Knife4jUI.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "In66.Net.Caching/3.7.3": {
         "type": "package",
         "dependencies": {
           "Castle.Core.AsyncInterceptor": "2.1.0",
@@ -957,7 +973,7 @@
           "lib/net6.0/In66.Net.Caching.dll": {}
         }
       },
-      "In66.Net.Consul/1.3.0": {
+      "In66.Net.Consul/1.3.3": {
         "type": "package",
         "dependencies": {
           "Consul": "1.6.10.5",
@@ -977,7 +993,7 @@
           "lib/net6.0/In66.Net.Consul.dll": {}
         }
       },
-      "In66.Net.Core/1.13.2": {
+      "In66.Net.Core/1.13.4": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Http": "2.2.2",
@@ -997,7 +1013,7 @@
           "lib/net6.0/In66.Net.Core.dll": {}
         }
       },
-      "In66.Net.EventBus/3.0.0": {
+      "In66.Net.EventBus/3.0.1": {
         "type": "package",
         "dependencies": {
           "Autofac": "6.4.0",
@@ -1016,7 +1032,7 @@
           "lib/net6.0/In66.Net.EventBus.dll": {}
         }
       },
-      "In66.Net.Mapper/3.0.0": {
+      "In66.Net.Mapper/3.0.1": {
         "type": "package",
         "dependencies": {
           "AutoMapper": "12.0.0",
@@ -1030,7 +1046,7 @@
           "lib/net6.0/In66.Net.Mapper.dll": {}
         }
       },
-      "In66.Net.Model/1.1.1": {
+      "In66.Net.Model/1.1.14": {
         "type": "package",
         "compile": {
           "lib/net6.0/In66.Net.Model.dll": {}
@@ -1039,7 +1055,7 @@
           "lib/net6.0/In66.Net.Model.dll": {}
         }
       },
-      "In66.Net.Mongo/3.3.3": {
+      "In66.Net.Mongo/3.3.4": {
         "type": "package",
         "dependencies": {
           "Humanizer": "2.14.1",
@@ -1055,7 +1071,7 @@
           "lib/net6.0/In66.Net.Mongo.dll": {}
         }
       },
-      "In66.Net.Repository/3.0.0": {
+      "In66.Net.Repository/3.0.1": {
         "type": "package",
         "dependencies": {
           "Dapper": "2.0.123",
@@ -1080,7 +1096,7 @@
           }
         }
       },
-      "In66.Net.Share/3.25.333": {
+      "In66.Net.Share/3.25.36": {
         "type": "package",
         "dependencies": {
           "AutoMapper": "12.0.0",
@@ -1089,18 +1105,20 @@
           "Google.Protobuf": "3.21.2",
           "Grpc.Net.ClientFactory": "2.47.0",
           "Grpc.Tools": "2.47.0",
-          "In66.Net.Caching": "3.7.1",
-          "In66.Net.Consul": "1.3.0",
-          "In66.Net.Core": "1.13.2",
-          "In66.Net.EventBus": "3.0.0",
-          "In66.Net.Mapper": "3.0.0",
-          "In66.Net.Model": "1.1.1",
-          "In66.Net.Mongo": "3.3.3",
-          "In66.Net.Repository": "3.0.0",
+          "IGeekFan.AspNetCore.Knife4jUI": "0.0.13",
+          "In66.Net.Caching": "3.7.3",
+          "In66.Net.Consul": "1.3.3",
+          "In66.Net.Core": "1.13.4",
+          "In66.Net.EventBus": "3.0.1",
+          "In66.Net.Mapper": "3.0.1",
+          "In66.Net.Model": "1.1.14",
+          "In66.Net.Mongo": "3.3.4",
+          "In66.Net.Repository": "3.0.1",
           "LogDashboard": "1.4.8",
           "Microsoft.AspNetCore.Authentication": "2.2.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.11",
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
+          "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "6.0.20",
           "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer": "5.0.0",
           "Microsoft.Extensions.Configuration.Binder": "6.0.0",
           "Microsoft.Extensions.Hosting.Abstractions": "6.0.0",
@@ -1116,6 +1134,8 @@
           "Serilog.Sinks.Console": "4.1.0",
           "Serilog.Sinks.File": "5.0.0",
           "SqlSugarCore": "5.1.3.34",
+          "Swashbuckle.AspNetCore": "6.5.0",
+          "Swashbuckle.AspNetCore.ReDoc": "6.5.0",
           "System.IdentityModel.Tokens.Jwt": "6.25.0"
         },
         "compile": {
@@ -1462,6 +1482,23 @@
           }
         }
       },
+      "Microsoft.AspNetCore.JsonPatch/6.0.20": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.AspNetCore.JsonPatch.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.JsonPatch.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Metadata/3.0.0": {
         "type": "package",
         "compile": {
@@ -1521,6 +1558,27 @@
             "related": ".xml"
           }
         }
+      },
+      "Microsoft.AspNetCore.Mvc.NewtonsoftJson/6.0.20": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.JsonPatch": "6.0.20",
+          "Newtonsoft.Json": "13.0.1",
+          "Newtonsoft.Json.Bson": "1.0.2"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "Microsoft.AspNetCore.Mvc.Versioning/5.0.0": {
         "type": "package",
@@ -1778,7 +1836,7 @@
           }
         }
       },
-      "Microsoft.Extensions.ApiDescription.Server/6.0.3": {
+      "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
         "type": "package",
         "build": {
           "build/_._": {}
@@ -2547,6 +2605,22 @@
           }
         }
       },
+      "Newtonsoft.Json.Bson/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "NJsonSchema/10.8.0": {
         "type": "package",
         "dependencies": {
@@ -3287,6 +3361,85 @@
             "related": ".xml"
           }
         }
+      },
+      "Swashbuckle.AspNetCore/6.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.ApiDescription.Server": "6.0.5",
+          "Swashbuckle.AspNetCore.Swagger": "6.5.0",
+          "Swashbuckle.AspNetCore.SwaggerGen": "6.5.0",
+          "Swashbuckle.AspNetCore.SwaggerUI": "6.5.0"
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "Swashbuckle.AspNetCore.ReDoc/6.5.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Swashbuckle.AspNetCore.ReDoc.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Swashbuckle.AspNetCore.ReDoc.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Swashbuckle.AspNetCore.Swagger/6.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.OpenApi": "1.2.3"
+        },
+        "compile": {
+          "lib/net6.0/Swashbuckle.AspNetCore.Swagger.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Swashbuckle.AspNetCore.Swagger.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Swashbuckle.AspNetCore.SwaggerGen/6.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Swashbuckle.AspNetCore.Swagger": "6.5.0"
+        },
+        "compile": {
+          "lib/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Swashbuckle.AspNetCore.SwaggerUI/6.5.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "System.Buffers/4.5.1": {
         "type": "package",
@@ -5719,111 +5872,125 @@
         "logo.png"
       ]
     },
-    "In66.Net.Caching/3.7.1": {
-      "sha512": "t/PVm7Zau1hIHtyRJCqLbA3n47UOyS5zirNPk6QDEvRcAhda+x7G5UCWpUNTnT8ECmFjaXWfRr2pg2z6ajn0kQ==",
+    "IGeekFan.AspNetCore.Knife4jUI/0.0.13": {
+      "sha512": "E5OoD0RreHvkTlTxYeNOzlKZOf5PDAHTwMGfYRKrrGkD4m4yc5qK69fs1/zZJXUA14vZWbbXfDuOIe3tH11HSQ==",
       "type": "package",
-      "path": "in66.net.caching/3.7.1",
+      "path": "igeekfan.aspnetcore.knife4jui/0.0.13",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "in66.net.caching.3.7.1.nupkg.sha512",
+        "igeekfan.aspnetcore.knife4jui.0.0.13.nupkg.sha512",
+        "igeekfan.aspnetcore.knife4jui.nuspec",
+        "lib/net6.0/IGeekFan.AspNetCore.Knife4jUI.dll",
+        "lib/net6.0/IGeekFan.AspNetCore.Knife4jUI.pdb",
+        "lib/net6.0/IGeekFan.AspNetCore.Knife4jUI.xml",
+        "lib/net7.0/IGeekFan.AspNetCore.Knife4jUI.dll",
+        "lib/net7.0/IGeekFan.AspNetCore.Knife4jUI.pdb",
+        "lib/net7.0/IGeekFan.AspNetCore.Knife4jUI.xml",
+        "lib/netcoreapp3.1/IGeekFan.AspNetCore.Knife4jUI.dll",
+        "lib/netcoreapp3.1/IGeekFan.AspNetCore.Knife4jUI.pdb",
+        "lib/netcoreapp3.1/IGeekFan.AspNetCore.Knife4jUI.xml",
+        "lib/netstandard2.0/IGeekFan.AspNetCore.Knife4jUI.dll",
+        "lib/netstandard2.0/IGeekFan.AspNetCore.Knife4jUI.pdb",
+        "lib/netstandard2.0/IGeekFan.AspNetCore.Knife4jUI.xml"
+      ]
+    },
+    "In66.Net.Caching/3.7.3": {
+      "sha512": "gWSqD7McJIyI3xD14N57CNKp4n426IjDH41iRk6q/EreubihHB5aoIffe8AXPzCFRN1/Z3armljYiXPedV12uw==",
+      "type": "package",
+      "path": "in66.net.caching/3.7.3",
+      "files": [
+        ".nupkg.metadata",
+        "in66.net.caching.3.7.3.nupkg.sha512",
         "in66.net.caching.nuspec",
         "lib/net6.0/In66.Net.Caching.dll"
       ]
     },
-    "In66.Net.Consul/1.3.0": {
-      "sha512": "mn7MM7NIhbnvAOFQqNEjYRM3fLHFzlcJhMIhvXiUHo+308qTTxocptTdscH9w59lpYDpvzGf3LNzVyAr/0k5yA==",
+    "In66.Net.Consul/1.3.3": {
+      "sha512": "lYAUkig4w4MnUdSrWe5V6mKB5HW1W0TmEvAC1vGCj1szWnnNlNR36jc4rX9Fl2nN7KH0GHbxfHNwMisWiXXWRA==",
       "type": "package",
-      "path": "in66.net.consul/1.3.0",
+      "path": "in66.net.consul/1.3.3",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
-        "in66.net.consul.1.3.0.nupkg.sha512",
+        "in66.net.consul.1.3.3.nupkg.sha512",
         "in66.net.consul.nuspec",
         "lib/net6.0/In66.Net.Consul.dll"
       ]
     },
-    "In66.Net.Core/1.13.2": {
-      "sha512": "NJC/fG+5Tz3E8Wz9dlon0KMtwcMviUdCcNBW602hnarldwHv+QhupUjrKf0BYehXqHuLXsFz7uM5wkhSzSH41A==",
+    "In66.Net.Core/1.13.4": {
+      "sha512": "C4b/w7GAvmQIZVzWOP+Aybe/esL1FZyZBeJ4Gx4QCLZIXRgBjTIaYrut/qfMr8sgsKeDPA9lx19X3ST/JNqCKQ==",
       "type": "package",
-      "path": "in66.net.core/1.13.2",
+      "path": "in66.net.core/1.13.4",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
-        "in66.net.core.1.13.2.nupkg.sha512",
+        "in66.net.core.1.13.4.nupkg.sha512",
         "in66.net.core.nuspec",
         "lib/net6.0/In66.Net.Core.dll"
       ]
     },
-    "In66.Net.EventBus/3.0.0": {
-      "sha512": "TFzXfu+uei21RLDLkbqt/UTY8It3FeUlYiNT1BLXGN2aNZayr4lsRmCgmmvUEozId0xx59XO/wUcA+D7QMhLjg==",
+    "In66.Net.EventBus/3.0.1": {
+      "sha512": "CwEsfvA72SozbrcfwkmQiS+cCM7kloP4kSrSP+C2NrBOVVTsSNKy+BZ0cjEpWcATwqH3LBZkwTRnf/amEagWEw==",
       "type": "package",
-      "path": "in66.net.eventbus/3.0.0",
+      "path": "in66.net.eventbus/3.0.1",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
-        "in66.net.eventbus.3.0.0.nupkg.sha512",
+        "in66.net.eventbus.3.0.1.nupkg.sha512",
         "in66.net.eventbus.nuspec",
         "lib/net6.0/In66.Net.EventBus.dll"
       ]
     },
-    "In66.Net.Mapper/3.0.0": {
-      "sha512": "kHkWaQO0sI75fYsl6pQZUcgY9nH22Ehf8qvHS6JZuLx0DAaKI93vQG5wwONh2uEbEp5rijrb3IRRUeK4wQTjxw==",
+    "In66.Net.Mapper/3.0.1": {
+      "sha512": "8EYNSY5N/2Fm24YkIaC8H8uyKDqOS7nFGYu+4KvFNmq7x3g7UTB4iHHUMJPOxz8AzeLHjo6LEqEvkN1Y1MVxlg==",
       "type": "package",
-      "path": "in66.net.mapper/3.0.0",
+      "path": "in66.net.mapper/3.0.1",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
-        "in66.net.mapper.3.0.0.nupkg.sha512",
+        "in66.net.mapper.3.0.1.nupkg.sha512",
         "in66.net.mapper.nuspec",
         "lib/net6.0/In66.Net.Mapper.dll"
       ]
     },
-    "In66.Net.Model/1.1.1": {
-      "sha512": "uyx2COx38yILOkKHsk/L9I1ifXG1Wv8YQz4GwrcYng9Y8tF/rNsHeT4gSH9zkIRavix6FdiFQUIUMLzlPreK2Q==",
+    "In66.Net.Model/1.1.14": {
+      "sha512": "ttDhjssuecEFUJh9JF49ZTIA/AqVoQp+Sj/bAiM78A999TWSljUlewVC0RNc226n3oTaVaOH3lRXsAna2MwsjA==",
       "type": "package",
-      "path": "in66.net.model/1.1.1",
+      "path": "in66.net.model/1.1.14",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
-        "in66.net.model.1.1.1.nupkg.sha512",
+        "in66.net.model.1.1.14.nupkg.sha512",
         "in66.net.model.nuspec",
         "lib/net6.0/In66.Net.Model.dll"
       ]
     },
-    "In66.Net.Mongo/3.3.3": {
-      "sha512": "UmOy+QyeI1L8jyV5oYaTaubHvDwyiDSIk7vuSutYngTBhwudyE9ANTlc8QaGQQkDheBTEVP6vpmylMlV7W51oA==",
+    "In66.Net.Mongo/3.3.4": {
+      "sha512": "LyDK5zESn9heNvXUkpONnF+mDxH+j5GV72kvllQZjt0iNS4ZEJxFuPRph0o0cB1nyhXumnAMZdApNwuC8m3Ntw==",
       "type": "package",
-      "path": "in66.net.mongo/3.3.3",
+      "path": "in66.net.mongo/3.3.4",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
-        "in66.net.mongo.3.3.3.nupkg.sha512",
+        "in66.net.mongo.3.3.4.nupkg.sha512",
         "in66.net.mongo.nuspec",
         "lib/net6.0/In66.Net.Mongo.dll"
       ]
     },
-    "In66.Net.Repository/3.0.0": {
-      "sha512": "1qh3z6B4EFl36/ahIPhWyHpeXybOPMNu1QYchxy1pNF/N7oJE0N+I6AD5UPuoUHi/SJGHsaFxQLySl3/izxVmg==",
+    "In66.Net.Repository/3.0.1": {
+      "sha512": "i6x+bA4HhPETs4Xx1S8dPjsctOck8W5oWlk99bRtHxsfA6CrCfx2YGGduAfx91qImBZHwi3EcB3VXFjj07hRHA==",
       "type": "package",
-      "path": "in66.net.repository/3.0.0",
+      "path": "in66.net.repository/3.0.1",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
-        "in66.net.repository.3.0.0.nupkg.sha512",
+        "in66.net.repository.3.0.1.nupkg.sha512",
         "in66.net.repository.nuspec",
         "lib/net6.0/In66.Net.Repository.dll",
         "lib/net6.0/In66.Net.Repository.runtimeconfig.json"
       ]
     },
-    "In66.Net.Share/3.25.333": {
-      "sha512": "a5tnc2JsFzX6JPUkvhH6F8Rop3bMgMTjVbRuj9DsjgzAsBk3/Si5u+p7PSm8hJqIPmnnk4VTqzUii+V0nnYvhg==",
+    "In66.Net.Share/3.25.36": {
+      "sha512": "87yo7sIwcS3kP80NFwV0B0sl9i3DI1u/YF7Xtrk/G5An8d/M8YMFlygtXGxCw3jypUs1QHpVPNMVk7m8+R0YlQ==",
       "type": "package",
-      "path": "in66.net.share/3.25.333",
+      "path": "in66.net.share/3.25.36",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
-        "in66.net.share.3.25.333.nupkg.sha512",
+        "in66.net.share.3.25.36.nupkg.sha512",
         "in66.net.share.nuspec",
         "lib/net6.0/In66.Net.Share.dll"
       ]
@@ -6099,6 +6266,25 @@
         "microsoft.aspnetcore.http.features.nuspec"
       ]
     },
+    "Microsoft.AspNetCore.JsonPatch/6.0.20": {
+      "sha512": "63KSV6vQGw4/yJgZoDj5T0clJrncLFKqyDUz5gFqg7vjvTW90ufkS72tOtPTMdPEDWy8jYDZYnbSxOEh4R7kUg==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.jsonpatch/6.0.20",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.AspNetCore.JsonPatch.dll",
+        "lib/net461/Microsoft.AspNetCore.JsonPatch.xml",
+        "lib/net6.0/Microsoft.AspNetCore.JsonPatch.dll",
+        "lib/net6.0/Microsoft.AspNetCore.JsonPatch.xml",
+        "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.xml",
+        "microsoft.aspnetcore.jsonpatch.6.0.20.nupkg.sha512",
+        "microsoft.aspnetcore.jsonpatch.nuspec"
+      ]
+    },
     "Microsoft.AspNetCore.Metadata/3.0.0": {
       "sha512": "gXT2t+bocyv4aCwwfrATy8QMHHZTRqZ/grmUzC+76MA1M+S0TIXp+BK3dEkvADVkhsAdERb5DnjqQKX3G/uMYQ==",
       "type": "package",
@@ -6136,6 +6322,21 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Core.xml",
         "microsoft.aspnetcore.mvc.core.2.2.5.nupkg.sha512",
         "microsoft.aspnetcore.mvc.core.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Mvc.NewtonsoftJson/6.0.20": {
+      "sha512": "hHZnmBwjfqPuG5060yKQjVv4TR8Y9e4Y0mlnsWpl+EbR2wiyTysuP5Jt3Tcnu5EGs7/HRDiD/NGKPNIyE2zlvw==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.mvc.newtonsoftjson/6.0.20",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net6.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll",
+        "lib/net6.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.xml",
+        "microsoft.aspnetcore.mvc.newtonsoftjson.6.0.20.nupkg.sha512",
+        "microsoft.aspnetcore.mvc.newtonsoftjson.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Mvc.Versioning/5.0.0": {
@@ -6469,10 +6670,10 @@
         "microsoft.entityframeworkcore.relational.nuspec"
       ]
     },
-    "Microsoft.Extensions.ApiDescription.Server/6.0.3": {
-      "sha512": "/FkS66n3wJaUR+Grkg+dMMIyrfmfkEybNoyOhdBMURxavPx6Q1Kn7NY5Ho41s975gpXA9Pnw7WRJbxwICLFgbw==",
+    "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
+      "sha512": "Ckb5EDBUNJdFWyajfXzUIMRkhf52fHZOQuuZg/oiu8y7zDCVwD0iHhew6MnThjHmevanpxL3f5ci2TtHQEN6bw==",
       "type": "package",
-      "path": "microsoft.extensions.apidescription.server/6.0.3",
+      "path": "microsoft.extensions.apidescription.server/6.0.5",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -6482,7 +6683,7 @@
         "build/Microsoft.Extensions.ApiDescription.Server.targets",
         "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.props",
         "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.targets",
-        "microsoft.extensions.apidescription.server.6.0.3.nupkg.sha512",
+        "microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
         "microsoft.extensions.apidescription.server.nuspec",
         "tools/Newtonsoft.Json.dll",
         "tools/dotnet-getdocument.deps.json",
@@ -7680,6 +7881,27 @@
         "packageIcon.png"
       ]
     },
+    "Newtonsoft.Json.Bson/1.0.2": {
+      "sha512": "QYFyxhaABwmq3p/21VrZNYvCg3DaEoN/wUuw5nmfAf0X3HLjgupwhkEWdgfb9nvGAUIv3osmZoD3kKl4jxEmYQ==",
+      "type": "package",
+      "path": "newtonsoft.json.bson/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net45/Newtonsoft.Json.Bson.dll",
+        "lib/net45/Newtonsoft.Json.Bson.pdb",
+        "lib/net45/Newtonsoft.Json.Bson.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.Bson.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.Bson.pdb",
+        "lib/netstandard1.3/Newtonsoft.Json.Bson.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.Bson.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.Bson.pdb",
+        "lib/netstandard2.0/Newtonsoft.Json.Bson.xml",
+        "newtonsoft.json.bson.1.0.2.nupkg.sha512",
+        "newtonsoft.json.bson.nuspec"
+      ]
+    },
     "NJsonSchema/10.8.0": {
       "sha512": "lChjsLWaxyvElh4WJjVhdIiCtx7rimYGFTxtSi2pAkZf0ZnKaXYIX484HCVyzbDDHejDZPgOrcfAJ3kqNSTONw==",
       "type": "package",
@@ -8514,6 +8736,122 @@
         "lib/netstandard2.0/StackExchange.Redis.xml",
         "stackexchange.redis.2.5.61.nupkg.sha512",
         "stackexchange.redis.nuspec"
+      ]
+    },
+    "Swashbuckle.AspNetCore/6.5.0": {
+      "sha512": "FK05XokgjgwlCI6wCT+D4/abtQkL1X1/B9Oas6uIwHFmYrIO9WUD5aLC9IzMs9GnHfUXOtXZ2S43gN1mhs5+aA==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore/6.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Swashbuckle.AspNetCore.props",
+        "swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+        "swashbuckle.aspnetcore.nuspec"
+      ]
+    },
+    "Swashbuckle.AspNetCore.ReDoc/6.5.0": {
+      "sha512": "MlysLblpiWftmqhMGaBEymkroFBlssFZzKr+7YHvvBrV5ymwAjdJ7bDBTTv5/qhaPZK6HoMu1ig3IwK2YtLTOg==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore.redoc/6.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0/Swashbuckle.AspNetCore.ReDoc.dll",
+        "lib/net5.0/Swashbuckle.AspNetCore.ReDoc.pdb",
+        "lib/net5.0/Swashbuckle.AspNetCore.ReDoc.xml",
+        "lib/net6.0/Swashbuckle.AspNetCore.ReDoc.dll",
+        "lib/net6.0/Swashbuckle.AspNetCore.ReDoc.pdb",
+        "lib/net6.0/Swashbuckle.AspNetCore.ReDoc.xml",
+        "lib/net7.0/Swashbuckle.AspNetCore.ReDoc.dll",
+        "lib/net7.0/Swashbuckle.AspNetCore.ReDoc.pdb",
+        "lib/net7.0/Swashbuckle.AspNetCore.ReDoc.xml",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.ReDoc.dll",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.ReDoc.pdb",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.ReDoc.xml",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.ReDoc.dll",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.ReDoc.pdb",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.ReDoc.xml",
+        "swashbuckle.aspnetcore.redoc.6.5.0.nupkg.sha512",
+        "swashbuckle.aspnetcore.redoc.nuspec"
+      ]
+    },
+    "Swashbuckle.AspNetCore.Swagger/6.5.0": {
+      "sha512": "XWmCmqyFmoItXKFsQSwQbEAsjDKcxlNf1l+/Ki42hcb6LjKL8m5Db69OTvz5vLonMSRntYO1XLqz0OP+n3vKnA==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore.swagger/6.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0/Swashbuckle.AspNetCore.Swagger.dll",
+        "lib/net5.0/Swashbuckle.AspNetCore.Swagger.pdb",
+        "lib/net5.0/Swashbuckle.AspNetCore.Swagger.xml",
+        "lib/net6.0/Swashbuckle.AspNetCore.Swagger.dll",
+        "lib/net6.0/Swashbuckle.AspNetCore.Swagger.pdb",
+        "lib/net6.0/Swashbuckle.AspNetCore.Swagger.xml",
+        "lib/net7.0/Swashbuckle.AspNetCore.Swagger.dll",
+        "lib/net7.0/Swashbuckle.AspNetCore.Swagger.pdb",
+        "lib/net7.0/Swashbuckle.AspNetCore.Swagger.xml",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Swagger.dll",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Swagger.pdb",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Swagger.xml",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.dll",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.pdb",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.xml",
+        "swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+        "swashbuckle.aspnetcore.swagger.nuspec"
+      ]
+    },
+    "Swashbuckle.AspNetCore.SwaggerGen/6.5.0": {
+      "sha512": "Y/qW8Qdg9OEs7V013tt+94OdPxbRdbhcEbw4NiwGvf4YBcfhL/y7qp/Mjv/cENsQ2L3NqJ2AOu94weBy/h4KvA==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore.swaggergen/6.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0/Swashbuckle.AspNetCore.SwaggerGen.dll",
+        "lib/net5.0/Swashbuckle.AspNetCore.SwaggerGen.pdb",
+        "lib/net5.0/Swashbuckle.AspNetCore.SwaggerGen.xml",
+        "lib/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll",
+        "lib/net6.0/Swashbuckle.AspNetCore.SwaggerGen.pdb",
+        "lib/net6.0/Swashbuckle.AspNetCore.SwaggerGen.xml",
+        "lib/net7.0/Swashbuckle.AspNetCore.SwaggerGen.dll",
+        "lib/net7.0/Swashbuckle.AspNetCore.SwaggerGen.pdb",
+        "lib/net7.0/Swashbuckle.AspNetCore.SwaggerGen.xml",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.dll",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.pdb",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.xml",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.dll",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.pdb",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.xml",
+        "swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+        "swashbuckle.aspnetcore.swaggergen.nuspec"
+      ]
+    },
+    "Swashbuckle.AspNetCore.SwaggerUI/6.5.0": {
+      "sha512": "OvbvxX+wL8skxTBttcBsVxdh73Fag4xwqEU2edh4JMn7Ws/xJHnY/JB1e9RoCb6XpDxUF3hD9A0Z1lEUx40Pfw==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore.swaggerui/6.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
+        "lib/net5.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
+        "lib/net5.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
+        "lib/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
+        "lib/net6.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
+        "lib/net6.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
+        "lib/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
+        "lib/net7.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
+        "lib/net7.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
+        "swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
+        "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
     },
     "System.Buffers/4.5.1": {
@@ -11844,7 +12182,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "In66.Net.Share >= 3.25.333"
+      "In66.Net.Share >= 3.25.36"
     ]
   },
   "packageFolders": {
@@ -11873,8 +12211,8 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://innernuget.xiguaji.com/v3/index.json": {}
+        "http://43.142.4.243:8081/repository/nuget-group/": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
@@ -11894,7 +12232,7 @@
         "dependencies": {
           "In66.Net.Share": {
             "target": "Package",
-            "version": "[3.25.333, )"
+            "version": "[3.25.36, )"
           }
         },
         "imports": [
@@ -11919,5 +12257,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://43.142.4.243:8081/repository/nuget-group/'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    }
+  ]
 }
